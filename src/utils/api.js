@@ -1,9 +1,10 @@
 // API Configuration
 //const ALPHA_VANTAGE_KEY = '22OUPOJD9WBP7FXP'; // Free tier: 25 calls/day
 const NEWSDATA_KEY = 'pub_5460c90507744621a2810dc54f1435a5';
-const GEMINI_KEY = 'AIzaSyClioDz6ksmmdsuGyQD1XAvcquOzX5N2po';
-const ALPHA_VANTAGE_KEY = '9GDTMNTYDDIYVDRQ';
-
+//const GEMINI_KEY = 'AIzaSyClioDz6ksmmdsuGyQD1XAvcquOzX5N2po';
+const GEMINI_KEY = 'AIzaSyBS7xzwXWGJWwZyfuqlmR4lzc6cUP_Ut3E';
+const ALPHA_VANTAGE_KEY = 'OML58IPYMBLIHP4T';
+//const ALPHA_VANTAGE_KEY='';
 // --- MOCK DATA FOR FALLBACK (When API limit is hit) ---
 
 const MOCK_QUOTE = {

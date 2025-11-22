@@ -97,7 +97,7 @@ const AIAnalysis = ({ analysis, loading, newsSentiment }) => {
             </ul>
           </div>
         )}
-
+        
         {/* Technical Indicators */}
         {analysis.technicalIndicators && (
           <div>
@@ -106,6 +106,16 @@ const AIAnalysis = ({ analysis, loading, newsSentiment }) => {
               Indicatori Tehnici (1 zi)
             </h4>
             <div className="grid grid-cols-2 md:grid-cols-3 gap-3">
+                
+              {/* 🟢 NOU: Fear & Greed Index Card (Hardcodat) 🟢 */}
+              <IndicatorCard
+                label="Fear&Greed (S&P 500)"
+                value={12}
+                status="bearish" // Folosim 'bearish' pentru culoare roșie (Extreme Fear)
+                icon={<Activity className="w-4 h-4" />}
+              />
+              {/* 🔴 SFÂRȘIT BLOC NOU 🔴 */}
+              
               <IndicatorCard
                 label="RSI (14)"
                 value={analysis.technicalIndicators.rsi.toFixed(1)}
