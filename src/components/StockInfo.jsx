@@ -114,14 +114,14 @@ const StockInfo = ({ stockData, overviewData, loading }) => {
 };
 
 const MetricCard = ({ icon, label, value, comparison }) => (
-  <div className="bg-slate-700/50 rounded-lg p-4 border border-slate-600/50 hover:border-slate-500 transition-colors">
-    <div className="flex items-center gap-2 text-slate-400 mb-2">
+  <div className="bg-slate-700/50 rounded-lg p-4 border border-slate-600/50 hover:border-slate-500 transition-colors flex flex-col justify-center items-center text-center">
+    <div className="flex items-center justify-center gap-2 text-slate-400 mb-2">
       {icon}
       <span className="text-sm font-medium">{label}</span>
     </div>
     <div className="text-xl font-bold text-slate-100 mb-1">{value}</div>
     {comparison && (
-      <div className="flex items-center gap-1 text-xs">
+      <div className="flex items-center justify-center gap-1 text-xs">
         <Info className="w-3 h-3 text-slate-500" />
         <span className="text-slate-500">{comparison.label}</span>
         <span className={`font-semibold ${comparison.color}`}>
@@ -133,4 +133,3 @@ const MetricCard = ({ icon, label, value, comparison }) => (
 );
 
 export default StockInfo;
-
